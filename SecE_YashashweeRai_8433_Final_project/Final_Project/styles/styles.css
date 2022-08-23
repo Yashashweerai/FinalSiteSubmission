@@ -1,0 +1,411 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body { 
+	max-width: 1140px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    font-family: Arial;
+    padding: 10px;
+    background: #92B4EC;
+}
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+#container{
+    max-width: 100%;
+    min-height: 800px;
+    background-color: #92B4EC;
+    margin: auto auto;
+}
+#main{
+    max-width: 1140px;
+    
+}
+
+
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+
+
+.header
+{
+ padding: 20px; text-align: center;
+ background: #92B4EC;
+}
+.header h1 { font-size: 50px;}
+
+
+.topnav {
+    overflow: hidden; 
+    background-color:#FFD24C;
+}
+.topnav a {
+    float: left;
+    display: block; 
+    color: #f2f2f2;
+    text-align: center; padding: 14px 16px;
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+.topnav a:hover {
+    color: yellow;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 180px;
+    border-radius: 50px;
+    height: 10%;
+}
+
+
+.leftcolumn { float: left; width: 75%;}
+.rightcolumn {
+    float: left; width: 25%;
+    padding-left: 20px;
+}
+.clear{
+    clear: both;
+}
+
+.card {
+    background-color: white; 
+    padding: 20px;
+    margin-top: 20px; 
+    border: 1px #ccddee;
+   
+}
+.row:after { 
+    content: ""; 
+    display: table;
+    clear: both;
+}
+.footer
+{ 
+padding: 20px; 
+text-align: center;
+background: #FFD24C;
+margin-top: 20px;
+color: white;
+}
+.footer-distributed{
+	background-color: #FFD24C ;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+	width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	margin: 0;
+}
+
+.footer-distributed .footer-left img{
+	width: 80%;
+    height: 30%;
+}
+
+.footer-distributed h3 span{
+	color: red;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a:visited{
+	color: grey;
+}
+
+.footer-distributed .footer-links a:hover{
+	color: red;
+}
+.footer-distributed .footer-links a:active{
+	color: yellow;
+}
+.footer-distributed .footer-company-name{
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color: #ffffff;
+	color: #FFE69A;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: white;
+	text-decoration: none;;
+}
+.footer-distributed .footer-center p a{
+	color: white;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #ffffff ;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #FFE69A;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) 
+{
+    .leftcolumn, .rightcolumn 
+    { 
+        width: 100%;
+        padding: 0;
+    }
+    .footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 1140px) 
+{
+    .topnav 
+    {
+        float: none;
+        width: 100%;
+    }
+}
+.clear{
+    clear: both;
+}
+
+#social{
+    position: fixed;
+    width: 60px;
+    right: 0px;
+    background-color: #FFD24C;
+    min-height: 150px;
+    top: 200px;
+}
+
+#social ul{
+    list-style-type: none;
+}
+
+#social ul li{
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#social ul li a{
+    color: #ffffff;
+}
+
+
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.banner_wrapper{
+	position: relative;
+}
+.next_arrow{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	height: 100%;
+	z-index: 10;
+	pointer-events: none;
+	background: url('../images/next1.png') center center no-repeat;
+	background-size: 60%;
+}
+.prev_arrow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 100%;
+	z-index: 10;
+	pointer-events: none;
+	background: url('../images/next.png') center center no-repeat;
+	background-size: 60%;
+}
+.banner{
+	max-width: 100%;
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.banner_box{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.banner_box:first-of-type{
+	position: relative;
+	opacity: 1;
+	z-index: 1;
+}
+
+
+.row{
+    min-height: 5px;
+}
+.col100{
+    width: 100%; float: left;
+}
+.col50{
+    width: 50%; float: left;
+}
+.col25{
+    width: 25%; float:left ;
+}
+.clear{
+    clear: both;
+}
+.cornerimage{
+    border-radius: 20px 0px 20px 0px;
+    opacity: 0.7;
+}
+
+.cornerimage:hover{
+    opacity: 1;
+    border-left: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+        <title>Contact Form</title>
+        <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            hr{
+                height: 5px;
+                margin: auto;
+            }
+            h1{
+                text-align: center;
+                color: white !important;
+            }
+            fieldset{
+                
+                background-color: #FFE69A;
+                border-color: #FFD24C;
+               border-width: 5px;
+            }
+            h2{
+                color: white;
+                
+            }
+            input.Europe{
+                width: 50px;
+                height: 20px;
+            }
+            input.Singapore{
+                width: 50px;
+                height: 20px;
+            }
+            input.Japan{
+                width: 50px;
+                height: 20px;
+            }
+            input.text{
+                height: 20px;
+                width: 800px;
+            }
+            input.submit{
+                background-color: red;
+                border-color: red;
+                height: 40px;
+                width: 60px;
+            }
+            input.reset{
+                background-color: grey;
+                border-color: grey;
+                height: 40px;
+                width: 60px;
+            }
+            ::placeholder{
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="main">
+        <div id="container">
+            <nav class="topnav">
+                <ul class="nav-list">
+                    <div class="logo">
+                        <img src="images/Logo.png">
+                    </div>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav><br/><br/>
+            <div id="social">
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <form method="post" action="" id="login" name="login" enctype="multipart/form-data">
+                <fieldset>
+                 <table  cellspacing="50px">
+                     <h1>Contact Us</h1>
+                     <hr width="700px" color="white">
+                     <tr>
+                         <td><h2>Name</h2></td>
+                         <td colspan="3"><input type="text" name="name" class="text" placeholder="Enter your full name." required/></td>
+                     </tr>
+                     <tr>
+                         <td><h2>Address</h2></td>
+                         <td colspan="3"><input type="text" name="address" class="text" placeholder="Enter your address"></td>
+                     </tr>
+                     <tr>
+                         <td><h2>E-mail</h2></td>
+                         <td colspan="3"><input type="email" name="e-mail" class="text" placeholder="Enter your e-mail" required/></td>
+                     </tr>
+                     <tr>
+                         <td><h2>Any package you are interested in?</h2></td>
+                         <td>
+                             <input type="checkbox" name="Europe" value="Europe" class="Europe" />Europe
+                         </td>
+                         <td>
+                             <input type="checkbox" name="Singapore" value="Singapore" class="Singapore"/> Singapore
+                         </td>
+                         <td>
+                             <input type="checkbox" name="Japan" value="Japan" class="Japan"/>Japan
+                         </td>
+                     </tr>
+                     <tr>
+                         <td><h2>Message</h2></td>
+                         <td colspan="3"><textarea rows="10" cols="100" name="message" placeholder="Enter any message" ></textarea></td>
+                     </tr>
+                     <tr>
+                         <td colspan="4" align="right">
+                             <input type="submit" name="submit" value="Submit" class="submit"/>
+                             <input type="reset" name="reset" value="Reset" class="reset"/>
+                         </td>
+                     </tr>
+                 </table>
+                </fieldset>
+             </form>
+             <footer class="footer-distributed">
+                <div class="footer-left">
+                    <img src="images/Logo.png">
+                    <h3>About <span>Getaway Travel Agency</span></h3>
+                    <p class="footer-links">
+                        <a href="index.html">Home Page</a>
+                        |
+                        <a href="gallery.html">Photo Gallery</a>
+                        |
+                        <a href="contact.html">Contact</a>
+                        |
+                        <a href="about.html">About Us</a>
+                        |
+                        <a href="services.html">Services</a>
+                    </p>
+                    <p class="footer-company-name">&copy;2022 Getaway Travel Agency Pvt. Ltd.</p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+					    <p>
+                            Kathmandu, Nepal
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+					    <p>+977 9000000000</p>
+                    </div>
+                    <div>
+                     <i class="fa fa-envelope"></i>
+					 <p><a href="mailto:support@getawaytravels.com">support@getawaytravels.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Get the latest news</span>
+                    <div class="footer-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                        
+                </div>
+            </footer>
+        </div>
+       </div>
+    </body>
+</html>
